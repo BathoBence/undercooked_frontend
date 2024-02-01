@@ -1,0 +1,16 @@
+button.ing {
+  background-color: green;
+  padding: 30px;
+  color: #8BC53F;
+  font-size: 40px;
+  border-radius: 5px;
+  box-shadow: 5px 5px 5px #888888;
+}
+
+.home{
+  height: calc(100vh - 2em);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f0f0f0;
+}

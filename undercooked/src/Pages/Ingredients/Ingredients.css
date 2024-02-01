@@ -1,0 +1,20 @@
+.container{
+  height: calc(100vh - 2em);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.ingredients{
+  height: 500px;
+  width: 400px;
+  border-radius: 10px;
+  border: 2px solid #525252; 
+  background-color: white;
+  font-size: 30px;
+  box-shadow: 5px 5px 5px #888888;
+}
+
+li{
+  margin: 40px;
+}
