@@ -6,6 +6,7 @@ import './index.css'
 import Layout from "./Pages/Layout/Layout";
 import Home from './Pages/Home/Home';
 import Ingredients from './Pages/Ingredients/Ingredients';
+import RecipeList from './Pages/RecipeList/RecipeList';
 
 const router = createBrowserRouter([
   {
@@ -20,6 +21,10 @@ const router = createBrowserRouter([
         path: '/ingredients',
         element: <Ingredients />
       },
+      {
+        path: '/recipes',
+        element: <RecipeList />
+      }
     ]
   }
 ])
