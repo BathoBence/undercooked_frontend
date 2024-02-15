@@ -7,6 +7,7 @@ import Layout from "./Pages/Layout/Layout";
 import Home from './Pages/Home/Home';
 import Ingredients from './Pages/Ingredients/Ingredients';
 import RecipeList from './Pages/RecipeList/RecipeList';
+import RecipePage from './Pages/RecipePage/RecipePage';
 
 const router = createBrowserRouter([
   {
@@ -24,6 +25,10 @@ const router = createBrowserRouter([
       {
         path: '/recipes',
         element: <RecipeList />
+      },
+      {
+        path: '/recipes/:id',
+        element: <RecipePage />
       }
     ]
   }
