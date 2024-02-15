@@ -1,5 +1,6 @@
 import './RecipeList.css';
 import { useState, useEffect } from "react";
+import { useNavigate } from 'react-router';
 
 import RecipeInfo from './../../Components/RecipeInfo/RecipeInfo';
 
@@ -12,6 +13,7 @@ async function fetchRecipes() {
 const RecipeList = () => {
 
   const [allRecipes, setAllRecipes] = useState(null);
+  const navigate = useNavigate();
 
   useEffect(() => {
       fetchRecipes()
@@ -21,7 +23,7 @@ const RecipeList = () => {
   return (allRecipes ? 
     <div className='center_list'>
     {allRecipes.map((recipe) => {
-      return <RecipeInfo key={recipe.id} recipe={recipe}/>;
+      return <RecipeInfo key={recipe.id} recipe={recipe} onClick={() => navigate(`/recipes/${recipe.id}`)}/>;
     })}
   </div> :
   <div>valami</div>

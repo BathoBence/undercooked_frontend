@@ -1,4 +1,7 @@
 import './RecipeInfo.css'
+
+import { Navigate } from 'react-router';
+
 const RecipeInfo = ({recipe}) => {
 
   console.log(recipe)
