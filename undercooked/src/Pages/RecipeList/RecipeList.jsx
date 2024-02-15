@@ -3,7 +3,7 @@ import { useState, useEffect } from "react";
 import { useNavigate } from 'react-router';
 
 
-// import RecipeInfo from './../../Components/RecipeInfo/RecipeInfo'
+import RecipeInfo from './../../Components/RecipeInfo/RecipeInfo'
 import Loading from "../Loading/Loading";
 
 
@@ -23,10 +23,14 @@ const RecipeList = () => {
       .then((recipes) =>{setAllRecipes(recipes)});
    },[])
 
+   const handleChoose = (recipeId) => {
+    navigate(`/recipes/${recipeId}`)
+   }
+
   return (allRecipes ? 
     <div className='center_list'>
     {allRecipes.map((recipe) => {
-      return <RecipeInfo key={recipe.id} recipe={recipe} onClick={() => navigate(`/recipes/${recipe.id}`)}/>;
+      return <RecipeInfo key={recipe.id} recipe={recipe} onChoose={handleChoose}/>;
     })}
 
   </div> :
