@@ -1,0 +1,46 @@
+.navBar {
+    min-height: 86vh;
+    position: fixed;
+    left: 0;
+    top: 13.9%;
+    display: flex;
+    flex-direction: column;
+    max-width: 153px;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    padding: 0.5rem;
+    color: white;
+    font-size: 1.5rem;
+    font-weight: bold;
+    background-color: green;
+    box-shadow: 5px 5px 5px #888888;
+    border: 3px solid #8BC53F; 
+  }
+
+  
+  .navButtons {
+    display: flex;
+    flex-direction: column;
+    justify-content: top;
+    flex: 1;
+    border-bottom-right-radius: 10px;
+    
+  }
+  .navButton{
+    padding: 10px;
+    margin-top: 10%;
+    margin-bottom: 10%;
+    background-color: rgb(4, 129, 23);
+    border-radius: 10px;
+    border: 3px solid #8BC53F; 
+    color: #8BC53F;
+    font-size: 20px;
+    text-decoration: none; 
+    font-family:Arial, Helvetica, sans-serif   
+  }
+  .navButton:hover{
+    text-decoration: underline;
+    background-color: rgb(1, 182, 1);
+    color : green;
+  }
