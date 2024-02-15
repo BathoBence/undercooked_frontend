@@ -29,6 +29,7 @@ export default function Ingredients() {
         <Outlet />
       </div>
     </div> :
-    <div> <Outlet /></div>
+    <div> <Outlet />
+    </div>
   )
 }
