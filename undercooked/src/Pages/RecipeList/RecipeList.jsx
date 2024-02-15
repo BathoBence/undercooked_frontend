@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 
-import RecipeInfo from './../../Components/RecipeInfo/RecipeInfo'
+// import RecipeInfo from './../../Components/RecipeInfo/RecipeInfo'
 import Loading from "../Loading/Loading";
 
 
@@ -20,9 +20,9 @@ const RecipeList = () => {
   })
   return ( allRecipes ? 
     <div>
-    {allRecipes.map((recipe => {
+    {/* {allRecipes.map((recipe => {
       <RecipeInfo recipee={recipe}/>
-    }))}
+    }))} */}
   </div> :
   <Loading />
   )
