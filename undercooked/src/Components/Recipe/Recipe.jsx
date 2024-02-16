@@ -1,10 +1,10 @@
-import './Recipe.css'
+import "./Recipe.css";
 
 const Recipe = ({ recipe }) => {
   return (
-    <div className='recipe-guide'>
+    <div className="recipe-guide">
       {recipe.name}
-      {recipe.ingredients.map(ingredient => {
+      {recipe.ingredients.map((ingredient) => {
         return (
           <li key={ingredient.material.name + ingredient.unit}>
             {ingredient.amount} {ingredient.unit} {ingredient.material.name}
@@ -15,6 +15,5 @@ const Recipe = ({ recipe }) => {
     </div>
   );
 };
-
 
 export default Recipe;

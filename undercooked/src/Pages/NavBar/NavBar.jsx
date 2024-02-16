@@ -1,23 +1,23 @@
-import { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
-import './NavBar.css'
+import "./NavBar.css";
 
-function NavBar(){
+function NavBar() {
+  const navigate = useNavigate();
 
-    const navigate = useNavigate();
-
-    return(
-        <>
-            <div className="navBar">
-                <div className="navButtons">
-                    <button className="navButton">Pantry</button>
-                    <button className="navButton" onClick={() => navigate('/recipes')}>Recipes</button>
-                    <button className="navButton">Favourite Recipes</button>
-                    <button className="navButton">Shopping List</button>
-                </div>
-            </div>
-        </>
-    )
+  return (
+    <>
+      <div className="navBar">
+        <div className="navButtons">
+          <button className="navButton">Pantry</button>
+          <button className="navButton" onClick={() => navigate("/recipes")}>
+            Recipes
+          </button>
+          <button className="navButton">Favourite Recipes</button>
+          <button className="navButton">Shopping List</button>
+        </div>
+      </div>
+    </>
+  );
 }
 
-export default NavBar
+export default NavBar;

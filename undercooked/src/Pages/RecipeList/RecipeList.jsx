@@ -1,11 +1,9 @@
-import './RecipeList.css';
 import { useState, useEffect } from "react";
-import { useNavigate } from 'react-router';
+import { useNavigate } from "react-router";
+import RecipeInfo from "./../../Components/RecipeInfo/RecipeInfo";
 
-
-import RecipeInfo from './../../Components/RecipeInfo/RecipeInfo'
+import "./RecipeList.css";
 import Loading from "../Loading/Loading";
-
 
 async function fetchRecipes() {
   const response = await fetch("/api/recipes/all");
@@ -14,28 +12,38 @@ async function fetchRecipes() {
 }
 
 const RecipeList = () => {
-
   const [allRecipes, setAllRecipes] = useState(null);
   const navigate = useNavigate();
 
   useEffect(() => {
-      fetchRecipes()
-      .then((recipes) =>{setAllRecipes(recipes)});
-   },[])
+    let lock = false;
 
-   const handleChoose = (recipeId) => {
-    navigate(`/recipes/${recipeId}`)
-   }
+    fetchRecipes().then((recipes) => {
+      if (!lock) {
+        setAllRecipes(recipes);
+      }
+    });
 
-  return (allRecipes ? 
-    <div className='center_list'>
-    {allRecipes.map((recipe) => {
-      return <RecipeInfo key={recipe.id} recipe={recipe} onChoose={handleChoose}/>;
-    })}
+    return () => {
+      lock = true;
+    }
+  }, []);
 
-  </div> :
-  <div>valami</div>
-  )
-}
+  const handleChoose = (recipeId) => {
+    navigate(`/recipes/${recipeId}`);
+  };
+
+  return allRecipes ? (
+    <div className="center_list">
+      {allRecipes.map((recipe) => {
+        return (
+          <RecipeInfo key={recipe.id} recipe={recipe} onChoose={handleChoose} />
+        );
+      })}
+    </div>
+  ) : (
+    <Loading />
+  );
+};
 
 export default RecipeList;
