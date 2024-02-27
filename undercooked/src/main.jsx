@@ -8,6 +8,8 @@ import Home from './Pages/Home/Home';
 import Ingredients from './Pages/Ingredients/Ingredients';
 import RecipeList from './Pages/RecipeList/RecipeList';
 import RecipePage from './Pages/RecipePage/RecipePage';
+import Welcome from './Pages/Login/Login';
+import LoginPage from './Pages/Login/Login';
 
 const router = createBrowserRouter([
   {
@@ -17,6 +19,10 @@ const router = createBrowserRouter([
       {
         path: '/',
         element: <Home />
+      },
+      {
+        path: '/login',
+        element: <LoginPage />
       },
       {
         path: '/ingredients',

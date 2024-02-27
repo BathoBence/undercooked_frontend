@@ -4,7 +4,7 @@ import './Home.css'
 export default function Home () {
 return (
   <div className="home">
-    <Link to={`/ingredients`}><button className="ing">Ingredients</button></Link>
+    <Link to={`/recipes`}><button className="ing">I'm hungry</button></Link>
     <Outlet />
   </div>
 )
