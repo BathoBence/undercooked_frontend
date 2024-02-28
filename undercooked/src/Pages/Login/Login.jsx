@@ -2,19 +2,20 @@ import React, { useState } from 'react';
 
 import './Login.css'
 
-function LoginPage(){
+const LoginPage = () => {
     const [username, setUsername] = useState('');
     const [password, setPassword] = useState('');
 
-    const handleLogin = () => {
+    const handleLogin = (e) => {
+        e.preventDefault();
+
+        //Need to implement login logic
         console.log("success")
     }
 
-    //return <div className="login">Were you here before?</div>
-
     return (
         <div className='login'>
-          <form onSubmit={handleLogin}>
+          <form onSubmit={(e)=> handleLogin(e)}>
             <div>
               <label htmlFor="username">Username:</label>
               <input

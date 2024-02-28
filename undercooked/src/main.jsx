@@ -10,6 +10,7 @@ import RecipeList from './Pages/RecipeList/RecipeList';
 import RecipePage from './Pages/RecipePage/RecipePage';
 import Welcome from './Pages/Login/Login';
 import LoginPage from './Pages/Login/Login';
+import RegistationPage from './Pages/Registration/Registation';
 
 const router = createBrowserRouter([
   {
@@ -23,6 +24,10 @@ const router = createBrowserRouter([
       {
         path: '/login',
         element: <LoginPage />
+      },
+      {
+        path: '/register',
+        element: <RegistationPage />
       },
       {
         path: '/ingredients',

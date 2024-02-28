@@ -2,7 +2,7 @@ import { Outlet } from "react-router-dom";
 import { useEffect, useState } from "react";
 import './Ingredients.css'
 
-export default function Ingredients() {
+const Ingredients = () => {
 
   const [ingredients, setIngredient] = useState(null);
 
@@ -33,3 +33,5 @@ export default function Ingredients() {
     </div>
   )
 }
+
+export default Ingredients;
