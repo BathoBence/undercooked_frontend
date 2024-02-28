@@ -2,7 +2,7 @@ import { Outlet, Link } from "react-router-dom";
 import './Layout.css'
 import NavBar from "../NavBar/Navbar";
 
-export default function Layout() {
+const Layout = () => {
   return (
     <div className="Layout">
       <nav>
@@ -15,6 +15,7 @@ export default function Layout() {
       <Outlet />
     </div>
   )
-
 }
+
+export default Layout;
 
