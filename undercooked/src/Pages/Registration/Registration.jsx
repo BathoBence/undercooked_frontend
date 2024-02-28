@@ -4,7 +4,7 @@ import {useNavigate} from "react-router-dom"
 import './Registation.css'
 import RegistrationForm from '../../Components/Forms/RegistrationFrom';
 
-const RegistationPage = () => {
+const RegistrationPage = () => {
 
     const [username, setUsername] = useState('');
     const [email, setEmail] = useState('');
@@ -67,4 +67,4 @@ const RegistationPage = () => {
     />;
 }
 
-export default RegistationPage;
+export default RegistrationPage;
