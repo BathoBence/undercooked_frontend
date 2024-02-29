@@ -19,22 +19,22 @@ const RecipeList = () => {
   const navigate = useNavigate();
 
   useEffect(() => {
-      fetchRecipes()
-      .then((recipes) =>{setAllRecipes(recipes)});
-   },[])
+    fetchRecipes()
+      .then((recipes) => { setAllRecipes(recipes) });
+  }, [])
 
-   const handleChoose = (recipeId) => {
+  const handleChoose = (recipeId) => {
     navigate(`/recipes/${recipeId}`)
-   }
+  }
 
-  return (allRecipes ? 
+  return (allRecipes ?
     <div className='center_list'>
-    {allRecipes.map((recipe) => {
-      return <RecipeInfo key={recipe.id} recipe={recipe} onChoose={handleChoose}/>;
-    })}
+      {allRecipes.map((recipe) => {
+        return <RecipeInfo key={recipe.id} recipe={recipe} onChoose={handleChoose} />;
+      })}
 
-  </div> :
-  <div>valami</div>
+    </div> :
+    <div>valami</div>
   )
 }
 
