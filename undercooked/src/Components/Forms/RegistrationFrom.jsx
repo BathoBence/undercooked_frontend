@@ -4,8 +4,9 @@ const RegistrationForm = ({
 
 
     return (<div className='register'>
+        <h2>Registration</h2>
         <form onSubmit={onRegister}>
-            <div>
+            <div className="formField">
                 <label htmlFor="username">Username:</label>
                 <input
                     type="text"
@@ -15,7 +16,7 @@ const RegistrationForm = ({
                     required
                 />
             </div>
-            <div>
+            <div className="formField">
                 <label htmlFor="email">Email:</label>
                 <input
                     type="email"
@@ -25,7 +26,7 @@ const RegistrationForm = ({
                     required
                 />
             </div>
-            <div>
+            <div className="formField">
                 <label htmlFor="password">Password:</label>
                 <input
                     type="password"
@@ -35,7 +36,7 @@ const RegistrationForm = ({
                     required
                 />
             </div>
-            <div>
+            <div className="formField">
                 <label htmlFor="confirmPassword">Confirm Password:</label>
                 <input
                     type="password"
@@ -45,7 +46,7 @@ const RegistrationForm = ({
                     required
                 />
             </div>
-            <div style={{ color: 'red' }}>{errorMessage}</div>
+            <div className="formField" style={{ color: 'red' }}>{errorMessage}</div>
             <button type="submit">Register</button>
         </form>
     </div>
