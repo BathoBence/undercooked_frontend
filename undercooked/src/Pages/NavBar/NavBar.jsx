@@ -10,7 +10,7 @@ const NavBar = () => {
         <>
             <div className="navBar">
                 <div className="navButtons">
-                    <button className="navButton">Pantry</button>
+                    <button className="navButton"onClick={() => navigate('/myPantry')}>Pantry</button>
                     <button className="navButton" onClick={() => navigate('/recipes')}>Recipes</button>
                     <button className="navButton">Favourite Recipes</button>
                     <button className="navButton">Shopping List</button>
