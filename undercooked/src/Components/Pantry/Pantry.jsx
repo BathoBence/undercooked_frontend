@@ -4,7 +4,7 @@ const Pantry = ({ pantryItems }) => {
 
 
   return <>
-    <div className="title">
+    <div className="panty_title">
       My Pantry
     </div>
     <div className="Pantry">

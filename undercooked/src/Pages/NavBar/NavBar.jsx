@@ -7,7 +7,7 @@ const NavBar = () => {
 
     return(
         <>
-            <div className="navBar">
+            <div className="navbar">
                 <div className="navButtons">
                     <button className="navButton"onClick={() => navigate('/myPantry')}>Pantry</button>
                     <button className="navButton" onClick={() => navigate('/recipes')}>Recipes</button>
