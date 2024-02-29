@@ -1,0 +1,17 @@
+.Pantry {
+  width: 80%;
+  padding-top: 150px;
+  padding-left: 200px;
+  height: calc(100vh - 2em);
+  justify-content: center;
+  align-items: center;
+}
+
+.title {
+  display: flex;
+  width: 80%;
+  padding-top: 150px;
+  padding-left: 200px;
+  justify-content: center;
+  align-items: center;
+}
