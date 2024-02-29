@@ -4,8 +4,7 @@ import Pantry from "../../Components/Pantry/Pantry"
 
 const fetchPantry = async () => {
   const response = await fetch("/api/user/pantry");
-  console.log(await response.json());
-  return response;
+  return await response.json();
 }
 
 const PantryPage = () => {
@@ -20,12 +19,10 @@ const PantryPage = () => {
 
 
   return <>
-    <div>
       {pantry ? 
           <Pantry pantryItems={pantry} /> :
           <Loading />
       }
-    </div>
   </>;
 }
 

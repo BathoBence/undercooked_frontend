@@ -1,17 +1,23 @@
-const Pantry = ({pantryItems}) => {
+import "./Pantry.css"
 
-  return (
+const Pantry = ({ pantryItems }) => {
+
+
+  return <>
+    <div className="title">
+      My Pantry
+    </div>
     <div className="Pantry">
       {pantryItems.map(item => {
+        console.log(item)
         return (
           <li key={item.name + item.unit}>
             {item.amount} {item.unit} {item.material.name}
           </li>
         )
       })}
-    </div>
-  )
-
+    </div >
+  </>
 }
 
 export default Pantry;
