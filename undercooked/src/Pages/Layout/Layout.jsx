@@ -7,7 +7,7 @@ const Layout = () => {
     <div className="Layout">
       <nav>
         <img src='./src/Images/frog.png'></img>
-        <Link to='/'>UnderCooked</Link>
+        <Link to='/'><h2 className="title">UNDERCOOKED</h2></Link>
         <Link to={`/register`}><button className="layoutbutton">Sign up</button></Link>
         <Link to={`/login`}><button className="layoutbutton">Login</button></Link>
       </nav>
