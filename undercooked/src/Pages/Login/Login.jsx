@@ -3,10 +3,13 @@ import Cookies from "js-cookie";
 
 import './Login.css'
 import LoginForm from '../../Components/Forms/LoginForm';
+import { useNavigate } from 'react-router-dom';
 
 const LoginPage = () => {
     const [username, setUsername] = useState('');
     const [password, setPassword] = useState('');
+
+    const navigate = useNavigate();
 
     const handleLogin = async (e) => {
         e.preventDefault();
@@ -27,6 +30,7 @@ const LoginPage = () => {
                 const result = await response.json();
                 const token = result.jwt;
                 Cookies.set('accessToken', token, { secure: true });
+                navigate("/");
             }
 
         } catch (error) {
