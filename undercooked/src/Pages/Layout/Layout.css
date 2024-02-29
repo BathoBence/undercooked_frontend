@@ -87,3 +87,13 @@ a {
   background-color: rgb(1, 182, 1);
   color : green;
 }
+
+.body_container{
+  width: 100%;
+  display: flex;
+  align-items: stretch;
+}
+
+.navbar {
+  width: 50vh;
+}

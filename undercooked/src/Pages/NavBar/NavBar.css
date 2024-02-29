@@ -1,4 +1,4 @@
-.navBar {
+/* .navBar {
     min-height: 86vh;
     position: fixed;
     left: 0;
@@ -17,8 +17,13 @@
     box-shadow: 5px 5px 5px #888888;
     border: 3px solid #8BC53F;
     margin-top: 7%;
-  }
+  } */
 
+  .navbar {
+    width: 17vw;
+    background-color: green;
+    height: ;
+  }
   
   .navButtons {
     display: flex;

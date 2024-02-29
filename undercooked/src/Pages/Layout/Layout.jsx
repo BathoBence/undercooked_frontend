@@ -18,8 +18,10 @@ const Layout = () => {
           <button className="layout_button" onClick={() => navigate("/login")}>Login</button>
         </div>
       </div>
-      <NavBar />
-      <Outlet />
+      <div className="body_container">
+        <NavBar />
+        <Outlet />
+      </div>
     </div>
   )
 }
