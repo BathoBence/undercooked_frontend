@@ -1,6 +1,7 @@
 const LoginForm = ({username, setUsername, password,setPassword, onLogin}) => {
     return (
         <div className='login'>
+          <h2>Login</h2>
           <form onSubmit={(e)=> onLogin(e)}>
             <div>
               <label htmlFor="username">Username:</label>
