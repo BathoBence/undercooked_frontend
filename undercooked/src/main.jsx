@@ -8,9 +8,8 @@ import Home from './Pages/Home/Home';
 import Ingredients from './Pages/Ingredients/Ingredients';
 import RecipeList from './Pages/RecipeList/RecipeList';
 import RecipePage from './Pages/RecipePage/RecipePage';
-import Welcome from './Pages/Login/Login';
-import LoginPage from './Pages/Login/Login';
-import RegistrationPage from './Pages/Registration/Registration';
+import LoginPage from './Pages/LoginPage/LoginPage';
+import RegistrationPage from './Pages/RegistrationPage/RegistrationPage';
 import PantryPage from './Pages/PantryPage/PantryPage';
 
 const router = createBrowserRouter([

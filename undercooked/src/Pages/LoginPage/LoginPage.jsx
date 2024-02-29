@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import Cookies from "js-cookie";
 
-import './Login.css'
+import './LoginPage.css'
 import LoginForm from '../../Components/Forms/LoginForm';
 import { useNavigate } from 'react-router-dom';
 
