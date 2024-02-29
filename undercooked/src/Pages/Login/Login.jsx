@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 
 import './Login.css'
+import LoginForm from '../../Components/Forms/LoginForm';
 
 const LoginPage = () => {
     const [username, setUsername] = useState('');
@@ -13,33 +14,12 @@ const LoginPage = () => {
         console.log("success")
     }
 
-    return (
-        <div className='login'>
-          <form onSubmit={(e)=> handleLogin(e)}>
-            <div>
-              <label htmlFor="username">Username:</label>
-              <input
-                type="text"
-                id="username"
-                value={username}
-                onChange={(e) => setUsername(e.target.value)}
-                required
-              />
-            </div>
-            <div>
-              <label htmlFor="password">Password:</label>
-              <input
-                type="password"
-                id="password"
-                value={password}
-                onChange={(e) => setPassword(e.target.value)}
-                required
-              />
-            </div>
-            <button type="submit">Login</button>
-          </form>
-        </div>
-      );
+    return <LoginForm 
+    username = {username}
+    setUsername = {setUsername} 
+    password = {password} 
+    setPassword = {setPassword}
+    onLogin = {handleLogin}/>
 }
 
 export default LoginPage;
