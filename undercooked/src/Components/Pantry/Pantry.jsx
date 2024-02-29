@@ -4,16 +4,12 @@ const Pantry = ({ pantryItems }) => {
 
 
   return <>
-    <div className="panty_title">
-      My Pantry
-    </div>
     <div className="Pantry">
       {pantryItems.map(item => {
-        console.log(item)
         return (
-          <li key={item.name + item.unit}>
+          <p key={item.material.name + item.unit + item.amount}>
             {item.amount} {item.unit} {item.material.name}
-          </li>
+          </p>
         )
       })}
     </div >

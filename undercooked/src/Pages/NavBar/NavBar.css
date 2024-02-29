@@ -21,7 +21,10 @@
 
   .navbar {
     width: 17vw;
+    min-width: 120px;
     background-color: green;
+    box-shadow: 5px 5px 5px #888888;
+
   }
   
   .navButtons {
@@ -45,7 +48,6 @@
     font-family:Arial, Helvetica, sans-serif   
   }
   .navButton:hover{
-    text-decoration: underline;
-    background-color: rgb(1, 182, 1);
+    background-color: #8BC53F;
     color : green;
   }

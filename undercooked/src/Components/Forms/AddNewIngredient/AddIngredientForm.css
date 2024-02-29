@@ -1,0 +1,24 @@
+.ingredient_form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 5vh;
+  gap: 15px
+}
+.add_pantry_button{
+  padding: 5px;
+  width: max-content;
+  background-color: rgb(4, 129, 23);
+  border-radius: 10px;
+  border: 3px solid #8BC53F; 
+  color: #8BC53F;
+  font-size: large;
+  text-decoration: none; 
+  font-family:Arial, Helvetica, sans-serif   
+}
+
+
+.add_pantry_button:hover{
+  background-color: #8BC53F;
+  color : green;
+}
