@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import Loading from "../Loading/Loading";
+import Pantry from "../../Components/Pantry/Pantry"
 
 const fetchPantry = async () => {
   const response = await fetch("/api/user/pantry");

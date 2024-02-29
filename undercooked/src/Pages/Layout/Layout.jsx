@@ -1,16 +1,23 @@
-import { Outlet, Link } from "react-router-dom";
+import { Outlet, Link, useNavigate } from "react-router-dom";
 import './Layout.css'
 import NavBar from "../NavBar/Navbar";
 
 const Layout = () => {
+
+  const navigate = useNavigate();
+
   return (
-    <div className="Layout">
-      <nav>
-        <img src='./src/Images/frog.png'></img>
-        <Link to='/'><h2 className="title">UNDERCOOKED</h2></Link>
-        <Link to={`/register`}><button className="layoutbutton">Sign up</button></Link>
-        <Link to={`/login`}><button className="layoutbutton">Login</button></Link>
-      </nav>
+    <div className="layout">
+      <div className="header">
+        <div className="title_container">
+          <img src='./src/Images/frog.png'></img>
+          <Link to='/'><h2 className="title">UNDERCOOKED</h2></Link>
+        </div>
+        <div className="header_button_container">
+          <button className="layout_button" onClick={() => navigate("/register")}>Sign up</button>
+          <button className="layout_button" onClick={() => navigate("/login")}>Login</button>
+        </div>
+      </div>
       <NavBar />
       <Outlet />
     </div>
