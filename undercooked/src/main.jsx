@@ -10,7 +10,7 @@ import RecipeList from './Pages/RecipeList/RecipeList';
 import RecipePage from './Pages/RecipePage/RecipePage';
 import Welcome from './Pages/Login/Login';
 import LoginPage from './Pages/Login/Login';
-import RegistationPage from './Pages/Registration/Registation';
+import RegistrationPage from './Pages/Registration/Registration';
 
 const router = createBrowserRouter([
   {
@@ -27,7 +27,7 @@ const router = createBrowserRouter([
       },
       {
         path: '/register',
-        element: <RegistationPage />
+        element: <RegistrationPage />
       },
       {
         path: '/ingredients',

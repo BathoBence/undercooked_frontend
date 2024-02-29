@@ -8,7 +8,7 @@ const Layout = () => {
       <nav>
         <img src='./src/Images/frog.png'></img>
         <Link to='/'>UnderCooked</Link>
-        <Link to={`/register`}><button className="layoutbutton">Sing-in</button></Link>
+        <Link to={`/register`}><button className="layoutbutton">Sign up</button></Link>
         <Link to={`/login`}><button className="layoutbutton">Login</button></Link>
       </nav>
       <NavBar />

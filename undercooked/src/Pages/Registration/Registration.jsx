@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import {useNavigate} from "react-router-dom"    
 
-import './Registation.css'
+import './Registration.css'
 import RegistrationForm from '../../Components/Forms/RegistrationFrom';
 
 const RegistrationPage = () => {
@@ -30,13 +30,13 @@ const RegistrationPage = () => {
         }
       
         try {
-          const response = await fetch('/api/signup', {
+          const response = await fetch('/api/user/signup', {
             method: 'POST',
             headers: {
               'Content-Type': 'application/json',
             },
             body: JSON.stringify({
-              username,
+              name: username,
               email,
               password,
             }),
@@ -44,7 +44,7 @@ const RegistrationPage = () => {
       
           if (response.ok) {
             console.log('Registration successful'); // Handle successful registration
-            navigate('/home')
+            navigate('/')
           } else {
             console.error('Registration failed'); // Handle registration error
             setErrorMessage('Registration failed. Please try again.');
