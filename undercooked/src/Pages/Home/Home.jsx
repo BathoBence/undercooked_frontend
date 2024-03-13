@@ -4,7 +4,7 @@ import './Home.css'
 const Home = () => {
 return (
   <div className="home">
-    <Link to={`/recipes`}><button className="ing">I'm hungry</button></Link>
+    <Link to={`/im_hungry`}><button className="ing">I'm hungry</button></Link>
     <Outlet />
   </div>
 )

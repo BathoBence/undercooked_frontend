@@ -11,6 +11,7 @@ import RecipePage from './Pages/RecipePage/RecipePage';
 import LoginPage from './Pages/LoginPage/LoginPage';
 import RegistrationPage from './Pages/RegistrationPage/RegistrationPage';
 import PantryPage from './Pages/PantryPage/PantryPage';
+import RecipesByUser from './Pages/RecipesByUser/RecipesByUser';
 
 const router = createBrowserRouter([
   {
@@ -44,6 +45,10 @@ const router = createBrowserRouter([
       {
         path: '/myPantry',
         element: <PantryPage />
+      },
+      {
+        path: '/im_hungry',
+        element: <RecipesByUser />
       }
     ]
   }
