@@ -4,7 +4,6 @@ import { useNavigate } from 'react-router';
 
 
 import RecipeInfo from './../../Components/RecipeInfo/RecipeInfo'
-import Loading from "../Loading/Loading";
 
 
 async function fetchRecipes() {

@@ -6,7 +6,8 @@ const AddIngredientForm = ({ ingredients, onSave }) => {
   const [amount, setAmount] = useState(null);
   const [unit, setUnit] = useState(null);
 
-  const onSubmit = () => {
+  const onSubmit = (e) => {
+    e.preventDefault();
     let newIngredient = {
       id: ingredientId,
       amount,
@@ -18,7 +19,7 @@ const AddIngredientForm = ({ ingredients, onSave }) => {
 
 
   return (
-    <form className="ingredient_form" onSubmit={onSubmit}>
+    <form className="ingredient_form" onSubmit={(e) => onSubmit(e)}>
       <div className="control">
         <label htmlFor="ingredientType">Ingredient: </label>
         <select onChange={(e) => setIngredientId(e.target.value)}>
