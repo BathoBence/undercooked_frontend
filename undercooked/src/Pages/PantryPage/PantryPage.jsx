@@ -44,6 +44,7 @@ const PantryPage = () => {
   const handleSave = async (newItem) => {
     const response = await postItem(newItem);
     if (response.ok) {
+      setIngredients([...ingredients, response])
       const pantry = await fetchPantry()
       setPantry(pantry);
     }
