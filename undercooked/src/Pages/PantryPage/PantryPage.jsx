@@ -41,11 +41,13 @@ const PantryPage = () => {
     })
   }, [])
 
+  console.log("valami")
+  
   const handleSave = async (newItem) => {
     const response = await postItem(newItem);
     if (response.ok) {
-      const pantry = await fetchPantry()
-      setPantry(pantry);
+      const newItem = await response.json();  
+      setPantry(pantry => [...pantry, newItem])
     }
     setIsAdd(false);
   }
