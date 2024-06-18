@@ -4,7 +4,7 @@ This learning project aimed to develop a website allowing users to search for re
 
 ## Backend
 
-<a href="https://github.com/CodecoolGlobal/el-proyecte-grande-sprint-1-java-BathoBence" target="blank"> You can find the frontend here. </a>
+<a href="https://github.com/CodecoolGlobal/el-proyecte-grande-sprint-1-java-BathoBence" target="blank"> You can find the backend here. </a>
 
 ## Technologies
 
